@@ -19,6 +19,7 @@ export default function Contact(){
                     <label htmlFor='email'>Your Email</label>
                     <input type='email' name='email' id='email'/>
                 </p>
+                <div data-netlify-recaptcha="true"></div>
                 <input type='submit' value='Submit'/>
             </form>
         </div>
