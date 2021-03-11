@@ -20,7 +20,9 @@ export default function Contact(){
                     <input type='email' name='email' id='email'/>
                 </p>
                 <div data-netlify-recaptcha="true"></div>
-                <input type='submit' value='Submit'/>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
         </div>
     )
