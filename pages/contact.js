@@ -9,7 +9,7 @@ export default function Contact(){
             {count}
             <button onClick={()=>setCount(count+1)}>add</button>
             <button onClick={()=>setCount(count-1)}>subtact</button>
-            <form name='contact' action='/sucess' method='POST' data-netlify='true'>
+            <form name='contact' action='/sucess' method='POST' data-netlify-recaptcha="true" data-netlify='true'>
                 <input type='hidden' name='form-name' value='contact'/>
                 <p>
                     <label htmlFor='yourName'>Your Name</label>
