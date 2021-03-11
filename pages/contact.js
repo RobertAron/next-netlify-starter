@@ -2,6 +2,7 @@ import {useState} from 'react'
 
 
 export default function Contact(){
+    console.log('mount')
     // const [count, setCount] = useState(0)
     return (
         <div>
