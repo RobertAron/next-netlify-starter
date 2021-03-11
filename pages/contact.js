@@ -5,26 +5,18 @@ export default function Contact(){
     console.log('mount')
     // const [count, setCount] = useState(0)
     return (
-        <div>
-            <h1>hello world!!</h1>
-            {/* {count}
-            <button onClick={()=>setCount(count+1)}>add</button>
-            <button onClick={()=>setCount(count-1)}>subtact</button> */}
-            <form name='contact' action='/sucess' method='POST' data-netlify-recaptcha="true" data-netlify='true'>
-                <input type='hidden' name='form-name' value='contact'/>
-                <p>
-                    <label htmlFor='yourName'>Your Name</label>
-                    <input type='text' name='name' id='yourname'/>
-                </p>
-                <p>
-                    <label htmlFor='email'>Your Email</label>
-                    <input type='email' name='email' id='email'/>
-                </p>
-                <div data-netlify-recaptcha="true"></div>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
-        </div>
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  <p>
+    <label>Email: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
     )
 }
